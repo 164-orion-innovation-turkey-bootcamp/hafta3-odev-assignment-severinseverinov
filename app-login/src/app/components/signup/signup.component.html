@@ -1,0 +1,80 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-3">
+      <div class="temp">
+        <div class="text-center">
+          <h3 class="strong">Sign Up</h3>
+        </div>
+        <!-- signup formu -->
+        <form [formGroup]="signupForm" (ngSubmit)="signUp()">
+          <div class="mb-3">
+            <label for="username" class="form-label">Username</label>
+            <input autocomplete="off" formControlName="username" type="text" class="form-control" id="username">
+            <!-- input içerisi hata yakalama işlemi -->
+            <span class="error"
+            *ngIf="signupForm.get('username') && !signupForm.get('username')!.valid && signupForm.get('username')!.touched"
+            >Username is required</span>
+          </div>
+          <div class="mb-3">
+            <label for="firstname" class="form-label">First Name</label>
+            <input autocomplete="off" formControlName="firstname" type="text" class="form-control" id="firstname">
+            <!-- input içerisi hata yakalama işlemi -->
+            <span class="error"
+            *ngIf="signupForm.get('firstname') && !signupForm.get('firstname')!.valid && signupForm.get('firstname')!.touched"
+            >Firsname is required</span>
+          </div>
+          <div class="mb-3">
+            <label for="lastname" class="form-label">Last Name</label>
+            <input autocomplete="off" formControlName="lastname" type="text" class="form-control" id="lastname">
+            <!-- input içerisi hata yakalama işlemi -->
+            <span class="error"
+            *ngIf="signupForm.get('lastname') && !signupForm.get('lastname')!.valid && signupForm.get('lastname')!.touched"
+            >Lastname is required</span>
+          </div>
+          <div class="mb-3">
+            <label for="phone" class="form-label">Phone Number</label>
+            <input autocomplete="off" formControlName="phone" type="number" class="form-control" id="phone">
+            <!-- input içerisi hata yakalama işlemi -->
+            <span class="error"
+            *ngIf="signupForm.get('phone') && !signupForm.get('phone')!.valid && signupForm.get('phone')!.touched"
+            >Phone number is required</span>
+          </div>
+
+          <div class="mb-3">
+            <label for="genre" class="form-label">Genre</label>
+            <select class="form-select" formControlName="genre" aria-label="Default select example">
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+              <option value="other">Other</option>
+            </select>
+            <!-- input içerisi hata yakalama işlemi -->
+            <span class="error"
+            *ngIf="signupForm.get('genre') && !signupForm.get('genre')!.valid && signupForm.get('genre')!.touched"
+            >Genre is not selected</span>
+          </div>
+
+          <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input autocomplete="off" formControlName="email" type="email" class="form-control" id="email">
+            <!-- input içerisi hata yakalama işlemi -->
+            <span class="error"
+            *ngIf="signupForm.get('email') && !signupForm.get('email')!.valid && signupForm.get('email')!.touched"
+            >Email is not correct</span>
+          </div>
+          <div class="mb-3">
+            <label for="password" class="form-label">Password</label>
+            <input autocomplete="off" formControlName="password" type="password" class="form-control" id="password">
+            <!-- input içerisi hata yakalama işlemi -->
+            <span class="error"
+            *ngIf="signupForm.get('password') && !signupForm.get('password')!.valid && signupForm.get('password')!.touched"
+            >Password is required</span>
+          </div>
+
+
+          <button type="submit" class="btn btn-primary">Sign up</button>
+          <a routerLink="/login">I have an account, login.</a>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,40 @@
+{
+  "log": [
+    {
+      "id": 1,
+      "login": true
+    }
+  ],
+  "signupUsers": [
+    {
+      "username": "asda",
+      "firstname": "asdasd",
+      "lastname": "asdasdasd",
+      "phone": "123123123123123",
+      "genre": "male",
+      "email": "elif_sbt@hotmail.com",
+      "password": "qweqweqwe",
+      "id": 1
+    },
+    {
+      "username": "dfgsd",
+      "firstname": "dfg",
+      "lastname": null,
+      "phone": null,
+      "genre": null,
+      "email": null,
+      "password": null,
+      "id": 2
+    },
+    {
+      "username": "severin",
+      "firstname": "sevgin",
+      "lastname": "serbest",
+      "phone": 5220220202,
+      "genre": "male",
+      "email": "sevgin.ss@gmail.com",
+      "password": "admin",
+      "id": 3
+    }
+  ]
+}

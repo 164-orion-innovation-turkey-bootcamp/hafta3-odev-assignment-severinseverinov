@@ -1,0 +1,29 @@
+.temp{
+  border:none;
+  position: absolute;
+  top: 26%;
+  left: 38%;
+  width: 400px;
+  padding: 20px;
+  background-color: #31D2F2;
+  border-radius: 10px;
+}
+
+
+label, h3{
+  font-weight: bold;
+}
+
+a{
+  margin-left: 10px;
+  color:#fff;
+  text-decoration: none;
+}
+a:hover{
+  margin-left: 10px;
+  color:#fff;
+  text-decoration: underline;
+}
+.error{
+  color:red;
+}
